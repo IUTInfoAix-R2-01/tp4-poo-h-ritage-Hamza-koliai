@@ -39,6 +39,7 @@ public class Scooter extends Velo{
         return "Scooter [Facteur  puissance moteur =" + facteurPuissanceMoteur + "]";
 	}
 	
+	@Override
 	public double getPuissance(double  FrequenceCoupsDePedale)
 	{
 		return super.getPuissance(FrequenceCoupsDePedale) * facteurPuissanceMoteur;
