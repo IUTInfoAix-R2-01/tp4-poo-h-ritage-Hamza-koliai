@@ -2,21 +2,26 @@ package tp3exosYaip6;
 
 
 
-abstract public class Circle implements GeometricObject{
+abstract public class Circle implements GeometricObject
+{
 	
 	private double raduis;
 	
-	public Circle(double raduis) {
+	public Circle(double raduis) 
+	{
 		this.raduis = raduis;
 	}
 	
-	public String toString() {
+	public String toString() 
+	{
 		return "Circle [ raduis = "+ raduis+" ]"     ;
 	}
-	public double getArea() {
+	public double getArea() 
+	{
 		return raduis*raduis*3.14116 ;
 	}
-	public double getPerimeter () {
+	public double getPerimeter () 
+	{
 		return 2*raduis * 3.14116;
 	}
 	

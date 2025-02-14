@@ -7,10 +7,12 @@ public class Velo {
 	private double diamRoue;
 	private Random genAlea;
 	
-	public static double getDEFAUT_BRAQUET() {
+	public static double getDEFAUT_BRAQUET() 
+	{
 		return DEFAUT_BRAQUET;
 	}
-	public static void setDEFAUT_BRAQUET(double dEFAUT_BRAQUET) {
+	public static void setDEFAUT_BRAQUET(double dEFAUT_BRAQUET) 
+	{
 		DEFAUT_BRAQUET = dEFAUT_BRAQUET;
 	}
 	
@@ -32,19 +34,23 @@ public class Velo {
 	public Random getGenAlea() {
 		return genAlea;
 	}
-	public void setGenAlea(Random genAlea) {
+	public void setGenAlea(Random genAlea) 
+	{
 		this.genAlea = genAlea;
 	}
 	public double getDiamRoue() {
 		return diamRoue;
 	}
-	public void setDiamRoue(double diamRoute) {
+	public void setDiamRoue(double diamRoute) 
+	{
 		this.diamRoue = diamRoute;
 	}
-	public double getBraquet() {
+	public double getBraquet() 
+	{
 		return braquet;
 	}
-	public void setBraquet(double braquet) {
+	public void setBraquet(double braquet)
+	{
 		this.braquet = braquet;
 	}
 	
@@ -60,39 +66,24 @@ public class Velo {
 	}
 
 
-public static void main(String[] args) {
-    Random random = new Random();
-
-    Velo veloClassique = new Velo();
-    veloClassique.setBraquet(14.0);
-    veloClassique.setDiamRoue(0.7);
-    veloClassique.setGenAlea(random);
-
-    double puissanceVelo = veloClassique.getPuissance(80); 
-    System.out.println("Vélo Classique : " + veloClassique);
-    System.out.println("Puissance Vélo Classique : " + puissanceVelo);
-
-    Scooter  Scooter= new Scooter(14.0, 0.7, 20.0); 
-    Scooter.setGenAlea(random);
-
-    double puissanceScooter = Scooter.getPuissance(80);
-    System.out.println("\nScooter : " + Scooter);
-    System.out.println("Puissance Scooter : " + puissanceScooter);
+	public static void main(String[] args) 
+	{
+	    Random random = new Random();
+	
+	    Velo veloClassique = new Velo();
+	    veloClassique.setBraquet(14.0);
+	    veloClassique.setDiamRoue(0.7);
+	    veloClassique.setGenAlea(random);
+	
+	    double puissanceVelo = veloClassique.getPuissance(80); 
+	    System.out.println("Vélo Classique : " + veloClassique);
+	    System.out.println("Puissance Vélo Classique : " + puissanceVelo);
+	
+	    Scooter  Scooter= new Scooter(14.0, 0.7, 20.0); 
+	    Scooter.setGenAlea(random);
+	
+	    double puissanceScooter = Scooter.getPuissance(80);
+	    System.out.println("\nScooter : " + Scooter);
+	    System.out.println("Puissance Scooter : " + puissanceScooter);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

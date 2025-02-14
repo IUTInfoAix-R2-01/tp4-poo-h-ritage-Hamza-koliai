@@ -1,28 +1,34 @@
 package tp3exosYaip5;
 
-public class Circle {
+public class Circle 
+{
     double radius;
     String color;
 
-    public Circle() {
+    public Circle() 
+    {
         radius = 1.0;
         color = "red";
     }
 
-    public Circle(double r) {
+    public Circle(double r) 
+    {
         radius = r;
         color = "red";
     }
 
-    public double getRadius() {
+    public double getRadius() 
+    {
         return radius;
     }
 
-    public double getArea() {
+    public double getArea() 
+    {
         return radius * radius * Math.PI;
     }
     
-    public static void main (String []args) {
+    public static void main (String []args) 
+    {
     	Circle c = new Circle();
     	System.out.println(c.getRadius());
     	System.out.println(c.getArea());

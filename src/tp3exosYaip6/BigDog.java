@@ -42,7 +42,4 @@ public class BigDog extends Dog
         myBigDog.greets(anotherDog); 
         myBigDog.greets(anotherBigDog); 
     }
-	
-	
-
 }

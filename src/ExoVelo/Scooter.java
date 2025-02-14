@@ -20,16 +20,20 @@ public class Scooter extends Velo{
 		DEFAUT_FACTEUR_PUISSANCE_MOTEUR = 15;
 	}
 
-	public static double getDEFAUT_FACTEUR_PUISSANCE_MOTEUR() {
+	public static double getDEFAUT_FACTEUR_PUISSANCE_MOTEUR() 
+	{
 		return DEFAUT_FACTEUR_PUISSANCE_MOTEUR;
 	}
-	public static void setDEFAUT_FACTEUR_PUISSANCE_MOTEUR(double dEFAUT_FACTEUR_PUISSANCE_MOTEUR) {
+	public static void setDEFAUT_FACTEUR_PUISSANCE_MOTEUR(double dEFAUT_FACTEUR_PUISSANCE_MOTEUR) 
+	{
 		DEFAUT_FACTEUR_PUISSANCE_MOTEUR = dEFAUT_FACTEUR_PUISSANCE_MOTEUR;
 	}
-	public double getFacteurPuissanceMoteur() {
+	public double getFacteurPuissanceMoteur() 
+	{
 		return facteurPuissanceMoteur;
 	}
-	public void setFacteurPuissanceMoteur(double facteurPuissanceMoteur) {
+	public void setFacteurPuissanceMoteur(double facteurPuissanceMoteur) 
+	{
 		this.facteurPuissanceMoteur = facteurPuissanceMoteur;
 	}
 	
@@ -45,23 +49,3 @@ public class Scooter extends Velo{
 		return super.getPuissance(FrequenceCoupsDePedale) * facteurPuissanceMoteur;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
