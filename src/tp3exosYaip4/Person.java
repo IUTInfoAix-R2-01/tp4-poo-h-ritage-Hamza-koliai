@@ -1,3 +1,4 @@
+/*class Person*/
 package tp3exosYaip4;
 
 public class Person {
@@ -27,10 +28,8 @@ public class Person {
     
 
         public static void main(String[] args) {
-            Staff staff1 = new Staff("Amin", "Vitrolles", "IUT aix-marseille", 3500.0);
-            Student student1 = new Student("Bob", "456 Avenue Centrale", "Informatique", 2, 2500.0);
-
-            System.out.println(staff1);
-            System.out.println(student1);
+        		Person P = new Person("Hamine","Amza");	
+        		System.out.println(P.getAddress());
+        		System.out.println(P.getAddress());	
         }
     }

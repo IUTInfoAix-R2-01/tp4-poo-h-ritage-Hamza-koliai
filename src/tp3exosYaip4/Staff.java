@@ -1,3 +1,4 @@
+/*class Staff*/
 package tp3exosYaip4;
 
 public class Staff extends Person {
@@ -31,4 +32,8 @@ public class Staff extends Person {
         return "Staff[Person[name=" + getName() + ", address=" + getAddress() +
                "], school=" + school + ", pay=" + pay + "]";
     }
+    public static void main(String [] args ) {
+        Staff staff1 = new Staff("Stef", "Vitrolles", "IUT aix-marseille", 3500.0);
+        System.out.println(staff1);
+   }
 }

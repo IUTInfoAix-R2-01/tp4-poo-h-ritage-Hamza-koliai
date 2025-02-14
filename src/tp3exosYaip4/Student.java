@@ -23,7 +23,7 @@ public class Student extends Person {
     public int getYear() {
         return year;
     }
-
+    
     public void setYear(int year) {
         this.year = year;
     }
@@ -40,5 +40,10 @@ public class Student extends Person {
     public String toString() { 
         return "Student[Person[name=" + getName() + ", address=" + getAddress() +
                "], program=" + program + ", year=" + year + ", fee=" + fee + "]";
+    }
+    
+    public static void main(String [] args ) {
+    	 Student student1 = new Student("Bob", "456 Avenue Centrale", "Informatique", 2, 2500.0);
+    	 System.out.println(student1);
     }
 }
